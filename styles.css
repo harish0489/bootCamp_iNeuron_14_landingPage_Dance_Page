@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", sans-serif;
+    list-style-type: none;
+}
+
+button {
+    all: unset
+}
+
+
+.logo {
+    height: 4vh;
+}
+.btn-package {
+    color: #ece9e7;
+    padding: 3vh 10vh;
+    background-color: #333333;
+    border-radius: 1px;
+}
+
+
+
+@media screen and (min-width:786px) and (max-width:1023px) {
+    nav {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+
+    nav .list-items{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .list-items li{
+        width : 10vw;
+    }
+
+    .creativity {
+        margin : 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .creativity span {
+        line-height: 85%;
+    }
+
+    .hollow {
+        font-size: 102px;
+        color: #f5f2f0;
+        -webkit-text-stroke: 1px #000000;
+        font-weight: 800;
+    }
+
+
+    .filled {
+        font-size: 102px;
+        color: black;
+    }
+
+    .banner .ingredient{
+        display: none;
+    }
+
+    .banner .sm-ingredient{
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+        color: #878787;
+    }
+
+    .brands, .package{
+        display: flex;
+        justify-content: center;
+    }
+
+    .brands li{
+        margin: 40px 0;
+        width: 10vw;
+    }
+
+
+    .footer {
+
+        padding: 0vh 11.85vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .timeline-list-item {
+        margin-bottom: 10px;
+        color: #868686;
+        list-style-type: disc;
+    }
+
+    .timeline-list-item.active {
+        color: #000000;
+    }
+
+    .timeline-list-item span {
+        font-size: 16px;
+        line-height: 135%;
+    }
+
+    #timeline-line {
+        width: 1px;
+        height: 250px;
+        background-color: #868686;
+        position: absolute;
+        top: 68.5%;
+        left: 6.5%;
+    }
+
+    .timeline-list-item::marker {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .dancinggirl{
+        height: 100px;
+        width : 200px;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+        padding: 0vh 10vh;
+    }
+
+    .quotes {
+        height: 50px;
+        margin-left: -38vh;
+    }
+
+    .middle p {
+        font-size: 14px;
+        width : 400px;
+        margin-top: 4px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+
+body {
+    background-image: url('./assets/biggirl.jpeg');
+    background-size: 520px auto;
+    background-repeat: no-repeat;
+    background-color: #f5f2f0;
+}
+
+    nav {
+        padding: 7vh 12vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .nav-left {
+        display: flex;
+        flex: 1
+    }
+
+    .sm-ingredient{
+        display: none;
+    }
+    nav .nav-right {
+        display: flex;
+        flex: 2;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .horizontal-line {
+        width: 40%;
+        height: 1.5px;
+        background-color: #7f7d7d;
+    }
+
+    .list-items {
+        display: flex;
+        flex-direction: row;
+        text-align: right;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .list-items li {
+        list-style-type: none;
+        width: 8vw;
+    }
+
+    .list-items li:first-child {
+        color: #787676;
+    }
+
+
+    .list-items li:not(:first-child) {
+        color: #969695;
+    }
+
+    .banner {
+        margin-left: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0vh 12vh;
+        height: 35vh;
+    }
+
+    .creativity {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    .creativity span {
+        line-height: 85%;
+    }
+
+    .hollow {
+        font-size: 102px;
+        color: #f5f2f0;
+        -webkit-text-stroke: 1px #000000;
+        font-weight: 800;
+    }
+
+
+    .filled {
+        font-size: 102px;
+        color: black;
+    }
+
+    .ingredient {
+        margin-top: 22vh;
+        font-size: 26px;
+        color: #878787;
+    }
+
+    .brands {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4vh 0vh;
+    }
+
+    .package {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 4vh 12vh;
+    }
+
+
+    .footer {
+        margin-left: 500px;
+        padding: 0vh 11.85vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .timeline-list-item {
+        margin-bottom: 10px;
+        color: #868686;
+        list-style-type: disc;
+    }
+
+    .timeline-list-item.active {
+        color: #000000;
+    }
+
+    .timeline-list-item span {
+        font-size: 16px;
+        line-height: 135%;
+    }
+
+    #timeline-line {
+        width: 1px;
+        height: 250px;
+        background-color: #868686;
+        position: absolute;
+        top: 68.5%;
+        left: 39%;
+    }
+
+    .timeline-list-item::marker {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+        padding: 0vh 20vh;
+    }
+
+    .quotes {
+        height: 50px;
+        margin-left: -38vh;
+    }
+
+    .middle p {
+        font-size: 14px;
+        margin-top: 4px;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .dancinggirl {
+        display: block;
+        height: 130px;
+    }
+
+    .d-arrow {
+        position: fixed;
+        right: 3%;
+        bottom: 10%;
+        height: 100px;
+
+    }
+}
